@@ -8,6 +8,7 @@ export default function getTemplate(todoList) {
           class="new-todo"
           placeholder="What needs to be done?"
           autofocus
+          onchange="window.todoList.store(this.value)"
         />
       </header>
       <main class="main">
